@@ -12,8 +12,14 @@ using namespace std;
 
 
 int main( int argc, char* argv[] ){
-    string path_img1="../data/DSC_2132dev.jpg";
-    string path_img2="../data/DSC_2132dev-RecoveredR.jpg";
+    if(argc<4){
+        cout<<"./AffineTransformationEstimation FullScene.jpg CropPart.jpg WarpedOut.jpg"<<endl;
+        return 1;
+    }
+
+
+    string path_img1=argv[1];
+    string path_img2=argv[2];
 
 
     Mat img1 = imread( path_img1, IMREAD_GRAYSCALE );
@@ -69,7 +75,7 @@ int main( int argc, char* argv[] ){
     Mat img2full = imread( path_img2 );
     Mat img1crop ;
     warpAffine( img1full, img1crop, T, img2full.size() );
-    imwrite("../output.png",img1crop);
+    imwrite(argv[3],img1crop);
 
 
     //Needed for visual debbuging
