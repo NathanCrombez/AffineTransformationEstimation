@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nathan/Developpements/2DAlignement
+CMAKE_SOURCE_DIR = /home/nathan/Developpements/AffineTransformationEstimation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nathan/Developpements/2DAlignement/build
+CMAKE_BINARY_DIR = /home/nathan/Developpements/AffineTransformationEstimation/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,9 +72,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/Developpements/2DAlignement/build/CMakeFiles /home/nathan/Developpements/2DAlignement/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/Developpements/AffineTransformationEstimation/build/CMakeFiles /home/nathan/Developpements/AffineTransformationEstimation/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/Developpements/2DAlignement/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nathan/Developpements/AffineTransformationEstimation/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -102,24 +102,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named 2DAlignement
+# Target rules for targets named AffineTransformationEstimation
 
 # Build rule for target.
-2DAlignement: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 2DAlignement
-.PHONY : 2DAlignement
+AffineTransformationEstimation: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 AffineTransformationEstimation
+.PHONY : AffineTransformationEstimation
 
 # fast build rule for target.
-2DAlignement/fast:
-	$(MAKE) -f CMakeFiles/2DAlignement.dir/build.make CMakeFiles/2DAlignement.dir/build
-.PHONY : 2DAlignement/fast
+AffineTransformationEstimation/fast:
+	$(MAKE) -f CMakeFiles/AffineTransformationEstimation.dir/build.make CMakeFiles/AffineTransformationEstimation.dir/build
+.PHONY : AffineTransformationEstimation/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/2DAlignement.dir/build.make CMakeFiles/2DAlignement.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/AffineTransformationEstimation.dir/build.make CMakeFiles/AffineTransformationEstimation.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -127,7 +127,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/2DAlignement.dir/build.make CMakeFiles/2DAlignement.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/AffineTransformationEstimation.dir/build.make CMakeFiles/AffineTransformationEstimation.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -135,7 +135,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/2DAlignement.dir/build.make CMakeFiles/2DAlignement.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/AffineTransformationEstimation.dir/build.make CMakeFiles/AffineTransformationEstimation.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -144,7 +144,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... 2DAlignement"
+	@echo "... AffineTransformationEstimation"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main.o"

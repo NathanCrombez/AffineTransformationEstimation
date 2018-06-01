@@ -1,4 +1,4 @@
-project(2DAlignement)
+project(AffineTransformationEstimation)
 cmake_minimum_required(VERSION 2.6)
 set(CMAKE_CXX_FLAGS "-lboost_system -lopencv_nonfree -lpthread -fpermissive")
 set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -O1")
@@ -19,10 +19,10 @@ main.cpp
 
 
 add_executable (
-  2DAlignement ${SOURCES}
+  AffineTransformationEstimation ${SOURCES}
 )
 
-target_link_libraries(2DAlignement ${OpenCV_LIBRARIES}  opencv_nonfree
+target_link_libraries(AffineTransformationEstimation ${OpenCV_LIBRARIES}  opencv_nonfree
 )
 
 
